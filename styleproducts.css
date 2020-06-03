@@ -2,6 +2,7 @@
 
 body {
   padding-top: 4em;
+  background-color: rgb(186, 247, 244);
 }
 .navbar {
   position: absolute;
@@ -23,6 +24,26 @@ body {
 .card-deck {
   padding: 1.5rem;
 }
+.card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* card experiemnt */
+
+.card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* end experiment */
+
 .card-img-top {
   width: 100%;
   height: 15vw;
