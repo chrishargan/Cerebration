@@ -1,0 +1,21 @@
+/* This is general website styling */
+
+body {
+  padding-top: 4em;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 4em;
+  margin-top: -4em;
+}
+/* end of general website styling */
+
+/* This section is for the products page styling */
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+/* This is the end of the products page styling */
