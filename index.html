@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cerebrate - Home</title>
+    <link rel="icon" href="img/brain.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
     <nav class="navbar navbar-inverse navbar-expand-md fixed-top text-white bg-dark">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">Cerebrate</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button type="button" class="navbar-toggle d-md-none" data-toggle="collapse" data-target="#myNavbar">
                     <span class="fa fa-navicon"></span>
                 </button>
             </div>
@@ -26,9 +27,9 @@
                     <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-right">
-                    <li><a href="#"><span class="fa fa-user"></span>Sign up</a></li>
-                    <li><a href="#"><span class="fa fa-sign-in"></span>Login</a></li>
+                <ul class="nav navbar-right ml-auto">
+                    <li id="sign-up"><a href="#"><span class="fa fa-user"></span>Sign up</a></li>
+                    <li id="sign-in"><a href="#"><span class="fa fa-sign-in"></span>Login</a></li>
                 </ul>
             </div>
     </nav>
@@ -139,9 +140,9 @@
             likes.innerText = current;
         });
         user.addEventListener("click", function(){
-            alert(msg)})
+            alert(msg)});
         signin.addEventListener("click", function(){
-            alert(msg)})
+            alert(msg)});
     </script>
 </body>
 </html>
