@@ -1,7 +1,7 @@
 /* General Website styling start */
 body {
     padding-top: 4em;
-    background-color: rgb(228, 250, 249);
+    background-image: linear-gradient(to right bottom, #a2bbb1, #8bbcb6, #6ebdc3, #4ebcd5, #33b8e9);
 }
   
 main {
