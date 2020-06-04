@@ -4,12 +4,7 @@ body {
   padding-top: 4em;
   background-color: rgb(228, 250, 249);
 }
-.navbar {
-  position: fixed;
-  width: 100%;
-  height: 4em;
-  margin-top: -4em;
-}
+
 h5 {
   font-weight: 100;
 }
@@ -21,6 +16,38 @@ h5 {
 
 p {
   font-family: ZwizzReg;
+}
+
+footer {
+  margin-top: 4em;
+  height: 4em;
+}
+li.nav-item {
+  height: 2em;
+}
+.fa {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+ min-width: 2em;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: #FFF;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: #FFF;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: #FFF;
 }
 
 @font-face {
@@ -41,26 +68,15 @@ font-weight: 100;
 
 
 /* This section is for the products page styling */
-.carousel-inner {
-  width: 100%;
-  max-height: 600px !important;
-}
-
-
-.carousel-caption {
-  padding-bottom: 20rem;
-}
-.creativity {
-  padding-bottom: 26rem;
-}
-
-.testimonials {
-  float: right;
-}
 
 #productheader {
   padding-top: 0.5rem;
 }
+
+@media only screen and (min-width: 770px) {
+#carouselExampleCaptions {content: hidden;} 
+}
+
 
 .card-deck {
   padding: 2rem;
@@ -88,9 +104,13 @@ button:hover {
 
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  height: auto;
   object-fit: cover;
   padding: 1rem;
 }
 
+.testimonials {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
 
