@@ -13,6 +13,32 @@ body {
 h5 {
   font-weight: 100;
 }
+
+
+ h1,h2,h3,h4,h5 {
+  font-family: ZwizzBold;
+}
+
+p {
+  font-family: ZwizzReg;
+}
+
+@font-face {
+  font-family: 'ZwizzBold';
+src: url(font/Zwizz-Bold.otf);
+font-style: normal;
+font-weight: 100;
+}
+
+@font-face {
+  font-family: 'ZwizzReg';
+src: url(font/Zwizz-Regular.otf);
+font-style: normal;
+font-weight: 100;
+}
+
+
+
 /* end of general website styling */
 
 /* This section is for the products page styling */
@@ -28,6 +54,10 @@ h5 {
 .creativity {
   padding-bottom: 26rem;
 }
+#productheader {
+  padding-top: 0.5rem;
+}
+
 .card-deck {
   padding: 2rem;
 }
