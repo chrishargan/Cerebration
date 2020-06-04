@@ -12,26 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar text-white bg-dark">
-        <a class="navbar-brand" href="#">Cerebrate</a>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="products.html" class="nav-link">Products</a>
-            </li>
-            <li class="nav-item">
-                <a  href="contact.html" class="nav-link">Contact</a>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
+    <nav class="navbar navbar-inverse navbar-expand-md fixed-top text-white bg-dark">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Cerebrate</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="fa fa-navicon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-right">
+                    <li><a href="#"><span class="fa fa-user"></span>Sign up</a></li>
+                    <li><a href="#"><span class="fa fa-sign-in"></span>Login</a></li>
+                </ul>
+            </div>
     </nav>
     <section class="jumbotron">
         <h1>Welcome to Cerebrate!</h1>
@@ -40,14 +39,15 @@
         <main class="container">
             <h2>Who are we?</h2>
             <p>
-                Cerebrate is a celebrated Belgian-based nootropics company. We are connected to two mayor Belgian pharmaceutical companies
+                Cerebrate is a celebrated Belgian-based nootropics company. We are connected to two major Belgian pharmaceutical companies
                 and rely on heavy experimentation on primates to guarantee that our products have maximum potential and efficiency.
                 We mainly sell our products via the e-webshop. live ma
             </p>
             <h2>What exactly are nootropics?</h2>
             <p>
-                More commonly knowns as smart drugs or cognotive enhancers, nootropics are basically supkements and other substances
+                More commonly knowns as smart drugs or cognotive enhancers, nootropics are basically suplements and other substances
                 that improve cognitive function, particularly executive functions, memory, creativity, or motivation.
+                If you want to learn more about nootropics, make sure to visit <a href="about.html">this page</a>!
             </p>
             <section>
                 <h2>Research</h2>
@@ -57,7 +57,7 @@
                         Chimpanzee Ceasar learning quickly thanks to our products
                     </figcaption>
                 </figure>
-                <p>Most companies are at a premature stage when it comes to research. Cerebrate is different! Due to
+                <p>Most companies are at a premature stage when it comes to research in the field of nootropics. Cerebrate is different! Due to
                 our connections to big pharmaceutical companies worldwide, we have access to laboratories all over the world!</p>
                 <p>We do extensive testing on animals. If you are an animals' rights activist, feel free to not use the
                     contact us option!</p>
@@ -65,15 +65,39 @@
                     created incredible
                     financial buffers by selling medicines for babies at a ridiculously high price!</p>
             </section>
-            <h2>Reviews</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Alias, aliquam aliquid debitis deserunt dolorem dolorum earum eos, expedita facere iste minus nihil
-                nulla odio omnis qui quibusdam sed soluta temporibus?</p>
+            <section class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Health advice</h2>
+                        <img src="img/running.jpeg" alt="Woman running" class="float-left mr-3">
+                        <p>
+                            Do not think our products alone will do all the magic! Exercising is very important for both
+                            your physical and mental health!
+                            If you live an unhealthy lifestyle, the effect of Cerebrate's products will greatly
+                            diminish.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Reviews</h2>
+                        <blockquote class="card blockquote mb-0">
+                            <cite><p class="card-text">I've suffered from young-onset dementia the last few years, but with Cerebrate's
+                                products I
+                                can
+                                finally remember the name of my two sons!</p>
+                                Thank you very much! --DJT
+                            </cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias, aliquam aliquid debitis deserunt dolorem dolorum earum eos, expedita facere iste minus nihil
+                    nulla odio omnis qui quibusdam sed soluta temporibus?</p>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
+            </section>
         </main>
     </div>
 <footer class="container-fluid bg-light d-flex align-items-center">
@@ -89,6 +113,35 @@
             <a href="http://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
         </li>
     </ul>
+    <section class="likes">
+            <i class="fa fa-heart"></i>
+        <span id="likes-amount">45</span> people liked this
+    </section>
 </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        const heart = document.getElementsByClassName("fa-heart")[0];
+        const likes = document.getElementById("likes-amount");
+        const signin = document.getElementById("sign-in");
+        const user = document.getElementById("sign-up");
+        let liked = false;
+        let msg = "Currently no database linked, please use our old imaginary site";
+        heart.addEventListener("click", function() {
+            let current = parseInt(likes.innerText);
+            !liked ? change(1, true) : change(-1, false);
+            function change(inc, bool){
+                liked ? heart.style.color = "#6b0000": heart.style.color = "#e50000";
+                liked = bool;
+                current += inc;
+            }
+            likes.innerText = current;
+        });
+        user.addEventListener("click", function(){
+            alert(msg)})
+        signin.addEventListener("click", function(){
+            alert(msg)})
+    </script>
 </body>
 </html>

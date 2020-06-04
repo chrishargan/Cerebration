@@ -10,17 +10,8 @@ body {
     min-height: 500px;
     margin-bottom: 0px;
 }
-.navbar {
-    position: fixed;
-    width: 100%;
-    height: 4em;
-    margin-top: -4em;
-}
 h1 {
     font-family: 'Finger Paint', cursive;
-}
-header {
-    z-index: 1000;
 }
 main {
     padding: 2em;
@@ -55,6 +46,9 @@ li.nav-item {
 .fa-youtube {
     background: #bb0000;
     color: #FFF;
+}
+.fa-heart {
+    color: #6b0000;
 }
 /*
 .parallax {
