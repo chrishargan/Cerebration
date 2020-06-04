@@ -54,6 +54,11 @@ font-weight: 100;
 .creativity {
   padding-bottom: 26rem;
 }
+
+.testimonials {
+  float: right;
+}
+
 #productheader {
   padding-top: 0.5rem;
 }
