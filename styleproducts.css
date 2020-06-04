@@ -2,13 +2,16 @@
 
 body {
   padding-top: 4em;
-  background-color: rgb(186, 247, 244);
+  background-color: rgb(228, 250, 249);
 }
 .navbar {
   position: absolute;
   width: 100%;
   height: 4em;
   margin-top: -4em;
+}
+h5 {
+  font-weight: 100;
 }
 /* end of general website styling */
 
@@ -19,17 +22,18 @@ body {
 }
 
 .carousel-caption {
-  padding-bottom: 27rem;
+  padding-bottom: 20rem;
+}
+.creativity {
+  padding-bottom: 26rem;
 }
 .card-deck {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 .card {
   transition: 0.5s;
   cursor: pointer;
 }
-
-/* card experiemnt */
 
 .card-title {
   font-size: 15px;
@@ -41,8 +45,6 @@ body {
   transform: scale(1.05);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
-
-/* end experiment */
 
 .card-img-top {
   width: 100%;
