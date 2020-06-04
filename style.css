@@ -1,0 +1,150 @@
+/* General Website styling start */
+body {
+    padding-top: 4em;
+    background-color: rgb(228, 250, 249);
+}
+  
+main {
+    padding: 2em;
+} 
+
+h1,h2,h3,h4,h5 {
+    font-family: ZwizzBold;
+  }
+  
+  p {
+    font-family: ZwizzReg;
+}
+@font-face {
+    font-family: 'ZwizzBold';
+  src: url(font/Zwizz-Bold.otf);
+  font-style: normal;
+  font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'ZwizzReg';
+  src: url(font/Zwizz-Regular.otf);
+  font-style: normal;
+  font-weight: 100;
+  }
+
+footer {
+    margin-top: 4em;
+    height: 4em;
+}
+li.nav-item {
+    height: 2em;
+}
+.fa {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+   min-width: 2em;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: #FFF;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: #FFF;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: #FFF;
+}
+.fa-heart {
+    color: #6b0000;
+}
+
+
+/* General Website styling End */
+/* Index styling Start */
+.jumbotron {
+    background-image: url("img/pills.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    margin-bottom: 0px;
+}
+
+/* Index styling End */
+/* About styling Start */
+
+
+
+/* About styling End */
+/* Products styling Start */
+#productheader {
+    padding-top: 0.5rem;
+  }
+  
+  @media only screen and (max-width: 770px) {
+  #carouselExampleCaptions {display: none;} 
+  }
+  
+  .carousel-inner  {
+    height: 35rem;
+  }
+  
+  .carousel-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 35rem;
+  }
+  
+  .carousel-caption {
+      padding-bottom: 20rem;
+  }
+
+  .card-deck {
+    padding: 2rem;
+  }
+  .card {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .buybutton:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 1rem;
+  }
+  
+  .testimonials {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+    
+/* Products styling End */
+/* Contact styling Start */
+
+
+
+/* Contact styling End */
