@@ -14,26 +14,31 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Our Products</title>
   </head>
   <body>
     <!-- This is the navbar section-->
-    <nav class="navbar text-white bg-dark fixed-top">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="products.html" class="nav-link active">Products</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md fixed-top text-white bg-dark">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Cerebrate</a>
+        <button type="button" class="navbar-toggle d-md-none" data-toggle="collapse" data-target="#myNavbar">
+          <span class="fa fa-navicon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active">Products</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-right ml-auto">
+          <li id="sign-up"><a href="#"><span class="fa fa-user"></span>Sign up</a></li>
+          <li id="sign-in"><a href="#"><span class="fa fa-sign-in"></span>Login</a></li>
+        </ul>
+      </div>
     </nav>
     
 
@@ -308,29 +313,7 @@
       crossorigin="anonymous"
     ></script>
     <!--custom javascript for footer-->
-    <script>
-      const heart = document.getElementsByClassName("fa-heart")[0];
-      const likes = document.getElementById("likes-amount");
-      const signin = document.getElementById("sign-in");
-      const user = document.getElementById("sign-up");
-      let liked = false;
-      let msg = "Currently no database linked, please use our old imaginary site";
-      heart.addEventListener("click", function() {
-          let current = parseInt(likes.innerText);
-          !liked ? change(1, true) : change(-1, false);
-          function change(inc, bool){
-              liked ? heart.style.color = "#6b0000": heart.style.color = "#e50000";
-              liked = bool;
-              current += inc;
-          }
-          likes.innerText = current;
-      });
-      user.addEventListener("click", function(){
-          alert(msg)})
-      signin.addEventListener("click", function(){
-          alert(msg)})
-  </script>
-
+    <script src="app.js"></script>
   <!--end of custom footer javascript-->
   </body>
 </html>
