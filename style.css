@@ -131,7 +131,8 @@ blockquote p {
   }
   
   .carousel-caption {
-      padding-bottom: 20rem;
+   position: fixed;
+   padding-bottom: 10rem;
   }
 
   .card-deck {
