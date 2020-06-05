@@ -40,7 +40,7 @@ html {
 
 }
 
-.container::after, .row::after {
+.profileContainer::after, .row::after {
   content: "";
   clear: both;
   display: table;
@@ -51,7 +51,7 @@ html {
   color: grey;
 }
 
-.button {
+.profilebutton {
   border: none;
   outline: 0;
   display: inline-block;
@@ -67,7 +67,7 @@ h2{
   margin-top: 15px;
 }
 
-.button:hover {
+.profilebutton:hover {
   background-color: #555;
 }
 
