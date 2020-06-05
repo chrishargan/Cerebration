@@ -68,6 +68,9 @@ li.nav-item {
 .fa-heart {
     color: #6b0000;
 }
+.fa-heart:hover {
+    transform: scale(1.5);
+}
 
 
 /* General Website styling End */
