@@ -68,6 +68,9 @@ li.nav-item {
 .fa-heart {
     color: #6b0000;
 }
+.fa-heart:hover {
+    transform: scale(1.5);
+}
 
 
 /* General Website styling End */
@@ -172,7 +175,128 @@ blockquote p {
     
 /* Products styling End */
 /* Contact styling Start */
+.contact{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
 
+.schedule{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 100px;
+}
 
+aside > p{
+	color: #fff;
+	border-bottom: 1px solid #4287f5;
+	line-height: 1.5;
+}
 
+em{
+font-size: 400%;
+color: #ED3710;
+}
+input[type=text],
+input[type=email],
+select,textarea,
+label{
+	width: 350px;
+	background: #f2f2f2;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+caption{
+	caption-side: top;
+}
+
+input[type=submit]{
+	color: #fff;
+	background-color: #4287f5;
+	padding: 10px;
+	width: 100px;
+	border-radius: 10px;
+	margin-left: 135px;
+}
+
+input[type=submit]:hover{
+	color: #4287f5;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+input[type=submit]:active{
+	color: #575568;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+.contactheading{
+	margin-top: 15px;
+	text-align: left;
+}
+
+table{
+	border-collapse: collapse;
+	width: 350px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover{
+	background-color: #4287f5;
+}
+
+th{
+	text-align: left;
+}
+
+.tel{
+	color: #4287f5;
+	padding: 8px;
+}
+
+.tel:hover{
+	background-color: #4287f5;
+	color: #fff;
+	text-decoration: none;
+}
+
+.icon{
+	margin-right: 5px;
+	fill: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .contact{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	margin-top: 20px;
+	}
+
+	.schedule{
+		display: grid;
+	    justify-content: center;
+	    align-content: center;
+	    margin-top: 20px;
+	  }
+
+	  .time{
+	padding: 10px;
+	margin-top: 20px;
+	}
+	
+	table{
+		margin-bottom: 20px;
+	}
+}
 /* Contact styling End */

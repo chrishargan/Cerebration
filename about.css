@@ -14,14 +14,15 @@ html {
 
 .column {
   float: left;
-  margin-bottom: 16px;
+  
   padding: 0 8px;
+  margin: 0 auto;
+  margin-bottom: 16px;
   
 }
 
 .profileContainer {
     padding: 0 16px;
-
   }
   .profileCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -35,7 +36,7 @@ html {
   padding: 50px;
   text-align: center;
   background-color: #474e5d;
-  color: white;
+  color: rgb(247, 241, 241);
 
 }
 
@@ -60,8 +61,10 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  
-
+}
+h1,
+h2{
+  margin-top: 15px;
 }
 
 .button:hover {

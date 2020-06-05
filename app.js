@@ -2,6 +2,7 @@ const heart = document.getElementsByClassName("fa-heart")[0];
 const likes = document.getElementById("likes-amount");
 const signin = document.getElementById("sign-in");
 const user = document.getElementById("sign-up");
+const buttons = document.getElementsByClassName("construction");
 let liked = false;
 let msg = "Currently no database linked, please use our old imaginary site";
 heart.addEventListener("click", function() {
@@ -14,7 +15,11 @@ heart.addEventListener("click", function() {
     }
     likes.innerText = current;
 });
+const alerter = () => alert(msg);
 user.addEventListener("click", function(){
     alert(msg)});
 signin.addEventListener("click", function(){
     alert(msg)});
+[...buttons].forEach(button =>
+    button.addEventListener("click", alerter)
+);
